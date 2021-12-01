@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+    <!-- 브라우저에 페이지에 대한 설정들을 알려줌 -->
+    <head>
+        <title>Capstone Demo</title>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <!-- 실제 페이지에 보여줄 내용을 알려줍니다 -->
+    <body>
+        {% for post in posts %}
+            <div>
+                <p>{{ post.name }}</p>
+                <audio autoplay controls>
+                    <source src=" {{ post.audio.url }} ">
+                </audio> 
+                <p>{{ post.audio.url }} djgfs</p> 
+                <p>{{ post.audio }} djgfs</p> 
+                <!-- post.audio는 audio 이름만 나온다 -->
+            </div>
+        {% endfor %}
+    </body>
+</html>
