@@ -23,9 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'vl!wz9jx7qmu&#wj=a$n+f_nq*)nkdtoi(x+)oqua_xejg%3^u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'singingmetamong.pythonanywhere.com'
+]
 
 
 # Application definition
